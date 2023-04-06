@@ -6,7 +6,7 @@ body {
   margin: 0;
   font-family: system-ui, sans-serif;
   color: black;
-  background-color: white;
+  background-color: rgb(59, 46, 46);
 }
 
 nav {
@@ -33,7 +33,7 @@ nav a {
 
 nav a[aria-current='page'] {
   color: #000;
-  background-color: #d4d4d4;
+  background-color: #ffffff;
 }
 
 main {
@@ -67,7 +67,7 @@ video {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 30px;
   text-align: center;
 }
