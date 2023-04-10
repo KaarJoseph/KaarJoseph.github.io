@@ -11,7 +11,7 @@ h1{
   margin: 50px auto;
 }
 body{
-  background-color: #ecf4fb;
+  background-color: #000000;
 }
 h1::before{
   content: "";
@@ -19,27 +19,28 @@ h1::before{
   width: 100%;
   height: 2px;
   position: absolute;
-  background-color: black;
+  background-color: rgb(255, 255, 255);
   top: 50%;
   z-index: -1;
 }
 h1 span{
-  background-color:#ecf4fb;
+  background-color:#ffffff;
   padding: 0 15px;
 }
-.galeria{
-  width: 80%;
+.img-gallery{
+  width: 90%;
   margin: 50px auto 50px;
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
   gap: 30px;
 }
-.galeria img{
+.img-gallery img{
   width: 100%;
+
   cursor: pointer;
   transition: 1s;
 }
-.galeria img:hover{
+.img-gallery img:hover{
   transform: scale(1.2);
 }
 .ful-img{
@@ -63,8 +64,8 @@ h1 span{
   cursor: pointer;
 }
 .ful-img img{
-  width: 90%;
-  max-width: 600px;
+  width: 426px;
+  max-width: 639px;
 }
 @media screen and (max-width:400px){
   h1{
@@ -76,4 +77,50 @@ h1 span{
   h1 span{
       padding: 0;
   }
+}
+footer {
+  background-color: #636262;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact-info, .social-media {
+  flex: 1 1 300px;
+  margin-bottom: 20px;
+}
+
+.contact-info h3, .social-media h3 {
+  margin-top: 0;
+}
+
+.social-media a {
+  text-align: center;
+  margin-right: 10px;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.social-media a:hover {
+  color: #93a5f5;
+}
+
+h3{
+  text-align: center;
+  position: relative;
+  width: 80%;
+  margin: 50px auto;
+  color: #ffffff;
+}
+p{
+  text-align: center;
+  position: relative;
+  width: 80%;
+  margin: 50px auto;
+  color: #ffffff;
+}
+
+.video{
+  text-align: center;
 }
