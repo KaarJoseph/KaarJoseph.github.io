@@ -27,19 +27,19 @@ h1 span{
   background-color:#ecf4fb;
   padding: 0 15px;
 }
-.img-gallery{
+.galeria{
   width: 80%;
   margin: 50px auto 50px;
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
   gap: 30px;
 }
-.img-gallery img{
+.galeria img{
   width: 100%;
   cursor: pointer;
   transition: 1s;
 }
-.img-gallery img:hover{
+.galeria img:hover{
   transform: scale(1.2);
 }
 .ful-img{
