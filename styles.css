@@ -124,3 +124,12 @@ p{
 .video{
   text-align: center;
 } 
+/* Estilos para los elementos pares */
+li:nth-child(even) {
+  background-color: rgb(228, 8, 8);
+}
+
+/* Estilos para los elementos impares */
+li:nth-child(odd) {
+  background-color: rgb(11, 15, 255);
+}
