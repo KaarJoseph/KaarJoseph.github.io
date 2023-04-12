@@ -1,0 +1,45 @@
+body{
+  background-color: black;
+}
+.cloud {
+    width: 100px;
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    position: relative;
+    animation-name: moveCloud;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  .cloud::before,
+  .cloud::after {
+    content: "";
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+  }
+  
+  .cloud::before {
+    width: 60px;
+    height: 60px;
+    top: -30px;
+    left: 10px;
+  }
+  
+  .cloud::after {
+    width: 80px;
+    height: 80px;
+    top: -50px;
+    right: 10px;
+  }
+  
+  @keyframes moveCloud {
+    from {
+      transform: translateX(-50%);
+    }
+    to {
+      transform: translateX(50%);
+    }
+  }
