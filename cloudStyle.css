@@ -1,45 +1,48 @@
-body{
-  background-color: black;
+/* Fondo del cielo */
+body {
+  text-align: center;
+	background-color: #7ea6c7;
+	height: 100vh;
+	position: relative;
+	width: 100%;
 }
+
+/* Estilos de las nubes */
 .cloud {
-    width: 100px;
-    height: 60px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 50px;
-    position: relative;
-    animation-name: moveCloud;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-  }
-  
-  .cloud::before,
-  .cloud::after {
-    content: "";
-    position: absolute;
-    background-color: rgb(255, 255, 255);
-    border-radius: 50%;
-  }
-  
-  .cloud::before {
-    width: 60px;
-    height: 60px;
-    top: -30px;
-    left: 10px;
-  }
-  
-  .cloud::after {
-    width: 80px;
-    height: 80px;
-    top: -50px;
-    right: 10px;
-  }
-  
-  @keyframes moveCloud {
-    from {
-      transform: translateX(-50%);
-    }
-    to {
-      transform: translateX(50%);
-    }
-  }
+	background-color: #FFFFFF;
+	border-radius: 50%;
+  box-shadow: 0px 0px 50px 30px #FFFFFF;
+  height: 50px;
+	position: absolute;
+	width: 150px;
+}
+
+/* Posiciones y animaciones de las nubes */
+.cloud:nth-of-type(1) {
+	animation: moveCloud 20s linear infinite;
+	left: -200px;
+	top: 100px;
+}
+
+.cloud:nth-of-type(2) {
+	animation: moveCloud 30s linear infinite;
+	left: -150px;
+	top: 200px;
+}
+
+.cloud:nth-of-type(3) {
+	animation: moveCloud 25s linear infinite;
+	left: 100px;
+	top: 100px;
+}
+
+/* Animación de movimiento de las nubes */
+@keyframes moveCloud {
+	0% {
+		transform: translateX(-200px);
+	}
+	100% {
+		transform: translateX(2000px);
+	}
+}
+
