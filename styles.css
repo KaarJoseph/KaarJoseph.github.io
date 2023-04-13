@@ -4,6 +4,36 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
+
+/*BARRA DE NAVEGACIÓN*/
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+/*MENU EN FORMATO HORIZONTAL*/
+li {
+  float: left;
+}
+/*COLOR DE PALABRAS EN EL MENU*/
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/*CAMBIO DE COLOR CON EL CURSOR-MENU*/
+li a:hover {
+  background-color: #111;
+}
+
 h1{
   text-align: center;
   position: relative;
@@ -129,14 +159,12 @@ a{
   text-align: center;
 } 
 /* Elementos pares  even*/
-li:nth-child(even) {
+.par_impar li:nth-child(even):nth-child(even) {
   background-color: rgb(98, 149, 158);
-  
-  ;
 }
 
 /* Elementos impares odd */
-li:nth-child(odd) {
+.par_impar li:nth-child(odd) {
   background-color: rgb(69, 71, 240);
   text-align: end;
 }
