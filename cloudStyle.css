@@ -1,8 +1,8 @@
 /* Fondo del cielo */
-.sky {
-	background-color: #5a9ace;
+body {
+  text-align: center;
+	background-color: #7ea6c7;
 	height: 100vh;
-	overflow: hidden;
 	position: relative;
 	width: 100%;
 }
@@ -44,9 +44,5 @@
 	100% {
 		transform: translateX(2000px);
 	}
-}
-
-body{
-  text-align: center;
 }
 
