@@ -1,24 +1,66 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YUSA GALLERY</title>
-    <link rel="stylesheet" href="JavaScript.css">
+	<title>Ejemplo de HTML5</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="JavaScript.css" />
+  <script type="module" src="JavaScript.js"></script>
 </head>
 <body>
-
-<h1 class="titulo1">SECCIÓN PRÁCTICA JAVASCRIPT</h1>
-
-  <button onlick="addLink()">Agregar link</button>
-
-<br> 
-  <ul>
-    <li>Elemento 1</li>
-    <li>Elemento 2</li>
-    <li>Elemento 3</li>
-  </ul>
-  <script src="JavaScript.js"></script> 
+	<header>
+		<h1 id="titulo1"></h1>
+		<nav>
+			<ul id="menu">
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="nube.html">Animaciones</a></li>
+				<li><a href="#">Contacto</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<div class="content">
+			<h1>Video de fondo en HTML</h1>
+			<p>Este es un ejemplo de cómo agregar un video de fondo a una página web utilizando HTML5.</p>
+			<a href="index.html">Inicio</a>
+		  </div>
+		  <div>
+			<h1>Video de fondo en HTML</h1>
+			<p>Este es un ejemplo de cómo agregar un video de fondo a una página web utilizando HTML5.</p>
+		  </div>
+		  <div>
+			<h1>Video de fondo en HTML</h1>
+			<p>Este es un ejemplo de cómo agregar un video de fondo a una página web utilizando HTML5.</p>
+		  </div>
+	</main>
+	<section>
+		<article>
+			<header>
+				<h2>Título del artículo</h2>
+        <img src="https://i.blogs.es/6f44dd/google-2015-1/1366_2000.jpg" width=300px height=175px >
+			</header>
+			<p>Este es un artículo sobre un tema interesante. Incluye algunos párrafos de texto que explican el tema con más detalle.</p>
+			<blockquote>
+				<p>Esta es una cita larga relacionada con el tema del artículo. Es importante porque ayuda a apoyar los argumentos presentados en el artículo.</p>
+			</blockquote>
+			<p>En resumen, este artículo proporciona una visión general del tema y brinda información útil para los lectores interesados en el tema.</p>
+			<footer>
+				<p>Autor: Nombre del autor del artículo</p>
+			</footer>
+		</article>
+		<aside>
+			<h3 onclick="addLink">Artículos relacionados</h3>
+			<button id="addLink">Agregar link</button>
+			<ul>
+				<li><a href="#" id="linkgoogle">Cómo hacer X</a></li>
+				<li><a href="#" class="linkexterno">Por qué Y es importante</a></li>
+				<li><a href="#">10 consejos para Z</a></li>
+				<li><a href="#" id="linkgoogle">Cómo hacer X</a></li>
+				<li><a href="#" class="linkexterno">Por qué Y es importante</a></li>
+			</ul>
+		</aside>
+	</section>
+	<footer>
+		<p>Derechos de autor © 2023 Mi sitio web</p>
+	</footer>
 </body>
 </html>
